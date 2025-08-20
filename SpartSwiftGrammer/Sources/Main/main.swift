@@ -10,15 +10,13 @@ import LogMacro
 
 SumClosure.calculate(SumClosure.sum, a: SumClosure.num, b: SumClosure.num2)
 
-switch SumClosure
-  .calculate2(
-    SumClosure.sum,
-    a: SumClosure.num,
-    b: SumClosure.num2
-  ) {
-  case .success(let value):
-    #logDebug(value)
-  case .failure(let error):
-    #logError("에러 발생: \(error)")
-}
 
+let filtered = ArrayIndex.removeIndexInt(ArrayIndex.numbers)
+#logDebug("짝수 인덱스 제거 결과", filtered)
+
+let filtered2 = ArrayIndex.removeIndexWithString(ArrayIndex.koreanAlphabets)
+#logDebug("짝수 string 인덱스 제거 결과", filtered2)
+
+
+let filtered3 = ArrayIndex.removeEvenIndex(ArrayIndex.koreanAlphabets)
+#logDebug("type에 따라 인덱스 제거 결과", filtered3)

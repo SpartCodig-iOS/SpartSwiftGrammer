@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F01AB3D2E554EA400A600E3 /* LogMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 7F01AB3C2E554EA400A600E3 /* LogMacro */; };
+		7F5DEFA02E55C40700B2A84F /* LogMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 7F5DEF9F2E55C40700B2A84F /* LogMacro */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7F01AB2F2E554A7400A600E3 /* CopyFiles */ = {
+		7F5DEF8A2E55C3A700B2A84F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,11 +23,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7F01AB312E554A7400A600E3 /* SpartSwiftGrammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpartSwiftGrammer; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5DEF8C2E55C3A700B2A84F /* SpartSwiftGrammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpartSwiftGrammer; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7F01AB332E554A7400A600E3 /* SpartSwiftGrammer */ = {
+		7F5DEF8E2E55C3A700B2A84F /* SpartSwiftGrammer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SpartSwiftGrammer;
 			sourceTree = "<group>";
@@ -35,29 +35,29 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7F01AB2E2E554A7400A600E3 /* Frameworks */ = {
+		7F5DEF892E55C3A700B2A84F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F01AB3D2E554EA400A600E3 /* LogMacro in Frameworks */,
+				7F5DEFA02E55C40700B2A84F /* LogMacro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F01AB282E554A7400A600E3 = {
+		7F5DEF832E55C3A600B2A84F = {
 			isa = PBXGroup;
 			children = (
-				7F01AB332E554A7400A600E3 /* SpartSwiftGrammer */,
-				7F01AB322E554A7400A600E3 /* Products */,
+				7F5DEF8E2E55C3A700B2A84F /* SpartSwiftGrammer */,
+				7F5DEF8D2E55C3A700B2A84F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7F01AB322E554A7400A600E3 /* Products */ = {
+		7F5DEF8D2E55C3A700B2A84F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F01AB312E554A7400A600E3 /* SpartSwiftGrammer */,
+				7F5DEF8C2E55C3A700B2A84F /* SpartSwiftGrammer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,68 +65,68 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F01AB302E554A7400A600E3 /* SpartSwiftGrammer */ = {
+		7F5DEF8B2E55C3A700B2A84F /* SpartSwiftGrammer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F01AB382E554A7500A600E3 /* Build configuration list for PBXNativeTarget "SpartSwiftGrammer" */;
+			buildConfigurationList = 7F5DEF932E55C3A700B2A84F /* Build configuration list for PBXNativeTarget "SpartSwiftGrammer" */;
 			buildPhases = (
-				7F01AB2D2E554A7400A600E3 /* Sources */,
-				7F01AB2E2E554A7400A600E3 /* Frameworks */,
-				7F01AB2F2E554A7400A600E3 /* CopyFiles */,
+				7F5DEF882E55C3A700B2A84F /* Sources */,
+				7F5DEF892E55C3A700B2A84F /* Frameworks */,
+				7F5DEF8A2E55C3A700B2A84F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7F01AB332E554A7400A600E3 /* SpartSwiftGrammer */,
+				7F5DEF8E2E55C3A700B2A84F /* SpartSwiftGrammer */,
 			);
 			name = SpartSwiftGrammer;
 			packageProductDependencies = (
-				7F01AB3C2E554EA400A600E3 /* LogMacro */,
+				7F5DEF9F2E55C40700B2A84F /* LogMacro */,
 			);
 			productName = SpartSwiftGrammer;
-			productReference = 7F01AB312E554A7400A600E3 /* SpartSwiftGrammer */;
+			productReference = 7F5DEF8C2E55C3A700B2A84F /* SpartSwiftGrammer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7F01AB292E554A7400A600E3 /* Project object */ = {
+		7F5DEF842E55C3A600B2A84F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					7F01AB302E554A7400A600E3 = {
+					7F5DEF8B2E55C3A700B2A84F = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 7F01AB2C2E554A7400A600E3 /* Build configuration list for PBXProject "SpartSwiftGrammer" */;
+			buildConfigurationList = 7F5DEF872E55C3A600B2A84F /* Build configuration list for PBXProject "SpartSwiftGrammer" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7F01AB282E554A7400A600E3;
+			mainGroup = 7F5DEF832E55C3A600B2A84F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				7F01AB3B2E554EA400A600E3 /* XCRemoteSwiftPackageReference "LogMacro" */,
+				7F5DEF9E2E55C40700B2A84F /* XCRemoteSwiftPackageReference "LogMacro" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 7F01AB322E554A7400A600E3 /* Products */;
+			productRefGroup = 7F5DEF8D2E55C3A700B2A84F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F01AB302E554A7400A600E3 /* SpartSwiftGrammer */,
+				7F5DEF8B2E55C3A700B2A84F /* SpartSwiftGrammer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7F01AB2D2E554A7400A600E3 /* Sources */ = {
+		7F5DEF882E55C3A700B2A84F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,7 +136,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7F01AB362E554A7500A600E3 /* Debug */ = {
+		7F5DEF912E55C3A700B2A84F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,7 +200,7 @@
 			};
 			name = Debug;
 		};
-		7F01AB372E554A7500A600E3 /* Release */ = {
+		7F5DEF922E55C3A700B2A84F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,47 +256,45 @@
 			};
 			name = Release;
 		};
-		7F01AB392E554A7500A600E3 /* Debug */ = {
+		7F5DEF942E55C3A700B2A84F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SpartSwiftGrammer/SpartSwiftGrammer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N94CS4N6VR;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		7F01AB3A2E554A7500A600E3 /* Release */ = {
+		7F5DEF952E55C3A700B2A84F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SpartSwiftGrammer/SpartSwiftGrammer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N94CS4N6VR;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 6.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F01AB2C2E554A7400A600E3 /* Build configuration list for PBXProject "SpartSwiftGrammer" */ = {
+		7F5DEF872E55C3A600B2A84F /* Build configuration list for PBXProject "SpartSwiftGrammer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F01AB362E554A7500A600E3 /* Debug */,
-				7F01AB372E554A7500A600E3 /* Release */,
+				7F5DEF912E55C3A700B2A84F /* Debug */,
+				7F5DEF922E55C3A700B2A84F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F01AB382E554A7500A600E3 /* Build configuration list for PBXNativeTarget "SpartSwiftGrammer" */ = {
+		7F5DEF932E55C3A700B2A84F /* Build configuration list for PBXNativeTarget "SpartSwiftGrammer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F01AB392E554A7500A600E3 /* Debug */,
-				7F01AB3A2E554A7500A600E3 /* Release */,
+				7F5DEF942E55C3A700B2A84F /* Debug */,
+				7F5DEF952E55C3A700B2A84F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -304,7 +302,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7F01AB3B2E554EA400A600E3 /* XCRemoteSwiftPackageReference "LogMacro" */ = {
+		7F5DEF9E2E55C40700B2A84F /* XCRemoteSwiftPackageReference "LogMacro" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Roy-wonji/LogMacro.git";
 			requirement = {
@@ -315,12 +313,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7F01AB3C2E554EA400A600E3 /* LogMacro */ = {
+		7F5DEF9F2E55C40700B2A84F /* LogMacro */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7F01AB3B2E554EA400A600E3 /* XCRemoteSwiftPackageReference "LogMacro" */;
+			package = 7F5DEF9E2E55C40700B2A84F /* XCRemoteSwiftPackageReference "LogMacro" */;
 			productName = LogMacro;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 7F01AB292E554A7400A600E3 /* Project object */;
+	rootObject = 7F5DEF842E55C3A600B2A84F /* Project object */;
 }
