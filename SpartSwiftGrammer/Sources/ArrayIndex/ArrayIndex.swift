@@ -54,4 +54,16 @@ final actor ArrayIndex {
     return result
   }
 
+  static func removeEvenIndexWithNumeric<T: Numeric>(_ items: [T]) -> [T] {
+    var result: [T] = []
+    for (index, value) in items.enumerated() {
+      if index % 2 == .zero {
+        result.append(value)
+      }
+    }
+    #logDebug("\(T.self) 배열 구현", result)
+    return result
+  }
+
+
 }
