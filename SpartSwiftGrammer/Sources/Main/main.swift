@@ -22,7 +22,3 @@ switch SumClosure
     #logError("에러 발생: \(error)")
 }
 
-
-HigherOrderFunctions.changeType(HigherOrderFunctions.numbers)
-
-HigherOrderFunctions.changeTypeWithMyMap(HigherOrderFunctions.numbers)
