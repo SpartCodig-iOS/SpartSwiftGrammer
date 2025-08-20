@@ -13,6 +13,9 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 *.DS_Store
+*.resolved
+*.xcworkspacedata
+*..pbxproj
 
 ## Playgrounds
 timeline.xctimeline
