@@ -11,6 +11,17 @@ import LogMacro
 final actor HigherOrderFunctions {
    static var numbers: [Int] =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+  static let numbers1 = [1, 2, 3, 4, 5]
+
+
+
+  static func changeForinToMap() {
+    let result = numbers1.map{ String($0) }
+    #logDebug(numbers1)
+
+  }
+
+
   static func changeType(_  number: [Int]  ) {
     let result = number
       .filter { $0 % 2 == 0}
