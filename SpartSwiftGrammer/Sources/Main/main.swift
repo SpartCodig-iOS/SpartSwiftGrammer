@@ -8,17 +8,15 @@
 import Foundation
 import LogMacro
 
-SumClosure.calculate(a: SumClosure.num, b: SumClosure.num2, operation: SumClosure.sum)
+let sumClosure = SumClosure()
 
-switch SumClosure
-  .calculate2(
-    a: SumClosure.num,
-    b: SumClosure.num2,
-    operation: SumClosure.sum
-  ) {
-  case .success(let value):
-    #logDebug(value)
-  case .failure(let error):
-    #logError("에러 발생: \(error)")
+
+await sumClosure.calculate(a: sumClosure.num, b: sumClosure.num2, operation: sumClosure.sum)
+
+switch await  sumClosure.calculate2(a: sumClosure.num, b: sumClosure.num2, operation: sumClosure.sum) {
+case .success(let value):
+  #logDebug(value)
+case .failure(let error):
+  #logError("에러 발생: \(error)")
 }
 
