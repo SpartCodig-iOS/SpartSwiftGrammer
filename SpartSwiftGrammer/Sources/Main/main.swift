@@ -9,7 +9,4 @@ import Foundation
 import LogMacro
 
 
-SumClosure.calculate(SumClosure.sum, a: SumClosure.num, b: SumClosure.num2)
-
-
-IntroducibleManager.introducibles()
+DeliveryTestRunner.run()
