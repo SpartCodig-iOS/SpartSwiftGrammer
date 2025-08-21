@@ -8,9 +8,11 @@
 import Foundation
 import LogMacro
 
+let higherOrderFunctions = HigherOrderFunctions()
 
-HigherOrderFunctions.changeForinToMap()
+await higherOrderFunctions.changeForinToMap()
 
-HigherOrderFunctions.changeType(HigherOrderFunctions.numbers)
+await higherOrderFunctions.changeType(higherOrderFunctions.numbers)
 
-HigherOrderFunctions.changeTypeWithMyMap(HigherOrderFunctions.numbers)
+await higherOrderFunctions.changeTypeWithMyMap(higherOrderFunctions.numbers)
+
