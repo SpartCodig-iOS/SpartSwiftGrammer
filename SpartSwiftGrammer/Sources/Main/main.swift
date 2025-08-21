@@ -8,8 +8,6 @@
 import Foundation
 import LogMacro
 
-SumClosure.calculate(SumClosure.sum, a: SumClosure.num, b: SumClosure.num2)
-
 
 let filtered = ArrayIndex.removeIndexInt(ArrayIndex.numbers)
 #logDebug("짝수 인덱스 제거 결과", filtered)
