@@ -19,12 +19,12 @@ final actor SumClosure {
   }
 
    // 계산 하는 함수 클로져 방식 1
-  static func calculate(_ operation : (Int, Int) -> String,  a: Int, b: Int){
+  static func calculate(a: Int, b: Int, operation: (Int, Int) -> String) {
     #logDebug(operation(a, b))
   }
 
   // 계산 하는 함수 클로져 방식 2 Result 추가
-  static func calculate2(_ operation: (Int, Int) -> String, a: Int, b: Int) -> Result<String, Error> {
+  static func calculate2(a: Int, b: Int, operation: (Int, Int) -> String) -> Result<String, Error> {
     let result = operation(a, b)
     return .success(result)   
   }

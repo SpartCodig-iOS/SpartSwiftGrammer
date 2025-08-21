@@ -259,7 +259,7 @@
 		7F01AB392E554A7500A600E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SpartSwiftGrammer/SpartSwiftGrammer.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N94CS4N6VR;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -271,7 +271,7 @@
 		7F01AB3A2E554A7500A600E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = SpartSwiftGrammer/SpartSwiftGrammer.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N94CS4N6VR;
 				ENABLE_HARDENED_RUNTIME = NO;
