@@ -44,7 +44,6 @@ final actor ArrayIndex {
 
   // INDEX 받는거 에 따라 변경 
   func removeEvenIndex<T>(_ items: [T]) -> [T] {
-
     var result: [T] = []
     for (index, value) in items.enumerated() {
       if index % 2 == .zero {
@@ -54,7 +53,6 @@ final actor ArrayIndex {
     #logDebug("\(T.self) 배열 구현", result)
     return result
   }
-
 
   func removeEvenIndexWithNumeric<T: Numeric>(_ items: [T]) -> [T] {
     var result: [T] = []

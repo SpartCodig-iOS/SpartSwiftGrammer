@@ -8,7 +8,7 @@
 import Foundation
 
 struct Robot: Introducible {
-  var name: String {
+   var name: String {
     didSet {
       if oldValue != name {
         #logDebug("\(name) 변경 알림")
