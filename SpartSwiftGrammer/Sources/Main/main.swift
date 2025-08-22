@@ -8,12 +8,9 @@
 import Foundation
 import LogMacro
 
-let higherOrderFunctions = HigherOrderFunctions()
+let memoryLeak = MemoryLeak()
 
-await higherOrderFunctions.changeForinToMap()
-
-await higherOrderFunctions.changeType(higherOrderFunctions.numbers)
-
-await higherOrderFunctions.changeTypeWithMyMap(higherOrderFunctions.numbers)
-
+await memoryLeak.leak()
+await memoryLeak.memoryLeakWeak()
+await memoryLeak.memorykLeakUnknown()
 
