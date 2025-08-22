@@ -10,22 +10,22 @@ import LogMacro
 
 actor MemoryLeak {
   func leak() {
-      var a: A? = A()
-      var b: B? = B()
+    var a: A? = A()
+    var b: B? = B()
 
-      a!.b = b          // A → B (강한 참조)
-      b!.a = a          // B → A (강한 참조)
+    a!.b = b          // A → B (강한 참조)
+    b!.a = a          // B → A (강한 참조)
 
-      // B가 보관하는 클로저가 A를 강하게 캡처 → B → closure → A 까지 강한 참조 고리 완성
-      b!.closure = {
-          // A 인스턴스를 사용 (예: 단순 표시)
-        #logDebug("closure uses A: \(String(describing: a))")
-      }
+    // B가 보관하는 클로저가 A를 강하게 캡처 → B → closure → A 까지 강한 참조 고리 완성
+    b!.closure = {
+      // A 인스턴스를 사용 (예: 단순 표시)
+      #logDebug("closure uses A: \(String(describing: a))")
+    }
 
-      // 참조 해제 시도
-      a = nil
-      b = nil
-      // ❌ deinit 출력이 안 나옴 → 순환 참조로 해제되지 않음
+    // 참조 해제 시도
+    a = nil
+    b = nil
+    // ❌ deinit 출력이 안 나옴 → 순환 참조로 해제되지 않음
   }
   func memoryLeakWeak() {
     var c: C? = C()
