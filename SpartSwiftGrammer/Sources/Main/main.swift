@@ -9,8 +9,6 @@ import Foundation
 import LogMacro
 
 let arrayIndex = ArrayIndex()
-
-
 // actor 외부
 let filtered = await arrayIndex.filterEvenIndexInts(await arrayIndex.numbers)
 #logDebug("짝수 인덱스 제거 결과", filtered)
