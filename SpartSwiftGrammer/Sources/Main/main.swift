@@ -9,7 +9,7 @@ import Foundation
 import LogMacro
 
 
-SumClosure.calculate(SumClosure.sum, a: SumClosure.num, b: SumClosure.num2)
+let introducible = IntroducibleManager()
 
 
-IntroducibleManager.introducibles()
+await introducible.introduceAll()

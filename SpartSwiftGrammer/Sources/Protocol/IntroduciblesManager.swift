@@ -8,20 +8,21 @@
 import Foundation
 
 actor IntroducibleManager {
-  static var introducible: [Introducible] = []
+  var introducible: [Introducible] = []
 
-  static var robot = Robot(name: "옵티머스")
-  static let cat = Cat(name: "나비")
-  static let dog = Dog(name: "바둑이")
+  var robot = Robot(name: "옵티머스")
+  let cat = Cat(name: "나비")
+  let dog = Dog(name: "바둑이")
 
-  static func introducibles() {
+  func introduceAll() {
     introducible.append(robot)
     introducible.append(cat)
-    introducible.append(cat)
-    
+    introducible.append(dog)
+    robot.name = "피규어"
+
     for item in  introducible {
       item.introduce()
-      
+
       switch item {
         case let robot as Robot:
           robot.batteryCharge()
@@ -34,7 +35,7 @@ actor IntroducibleManager {
       }
     }
 
-    robot.name = "피규어"
+
   }
-  
+
 }
