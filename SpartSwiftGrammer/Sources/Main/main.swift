@@ -8,7 +8,6 @@
 import Foundation
 import LogMacro
 
-
 let deliveryRunner = DeliveryRunner()
 
 await deliveryRunner.runDelivery()

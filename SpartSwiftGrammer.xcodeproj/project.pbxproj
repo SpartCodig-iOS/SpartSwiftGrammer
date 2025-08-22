@@ -259,9 +259,10 @@
 		7F5DEF942E55C3A700B2A84F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N94CS4N6VR;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.SpartSwiftGrammer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -271,9 +272,10 @@
 		7F5DEF952E55C3A700B2A84F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N94CS4N6VR;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = io.Roy.SpartSwiftGrammer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
