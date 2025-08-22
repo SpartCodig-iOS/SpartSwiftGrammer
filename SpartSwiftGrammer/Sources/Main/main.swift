@@ -8,12 +8,19 @@
 import Foundation
 import LogMacro
 
-let higherOrderFunctions = HigherOrderFunctions()
+let arrayIndex = ArrayIndex()
+// actor 외부
+let filtered = await arrayIndex.filterEvenIndexInts(await arrayIndex.numbers)
+#logDebug("짝수 인덱스 제거 결과", filtered)
 
-await higherOrderFunctions.changeForinToMap()
+let filtered2 = await arrayIndex.filterEvenIndexStrings(await arrayIndex.koreanAlphabets)
+#logDebug("짝수 string 인덱스 제거 결과", filtered2)
 
-await higherOrderFunctions.changeType(higherOrderFunctions.numbers)
+let filtered3 = await arrayIndex.filterEvenIndexedItems(await arrayIndex.numbers)
+#logDebug("type에 따라 인덱스 제거 결과", filtered3)
 
-await higherOrderFunctions.changeTypeWithMyMap(higherOrderFunctions.numbers)
+let filtered4 = await arrayIndex.filterEvenIndexedItems(await arrayIndex.koreanAlphabets)
+#logDebug("type에 따라 인덱스 제거 결과", filtered4)
 
-
+let filtered5 = await arrayIndex.filterEvenIndexElements(await arrayIndex.numbers)
+#logDebug("type에 따라 인덱스 제거 결과", filtered5)
