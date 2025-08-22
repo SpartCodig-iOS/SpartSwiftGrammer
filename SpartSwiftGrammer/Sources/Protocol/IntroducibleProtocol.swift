@@ -9,7 +9,7 @@ import Foundation
 import LogMacro
 
 protocol Introducible {
-    var name: String { get set }
-    func introduce()
+  var name: String { get set }
+  func introduce()
 }
 

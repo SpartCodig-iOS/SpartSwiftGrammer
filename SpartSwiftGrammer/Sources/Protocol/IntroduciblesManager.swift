@@ -8,13 +8,13 @@
 import Foundation
 
 actor IntroducibleManager {
-  static var introducible: [Introducible] = []
-
-  static var robot = Robot(name: "옵티머스")
-  static let cat = Cat(name: "나비")
-  static let dog = Dog(name: "바둑이")
-
-  static func introducibles() {
+  var introducible: [Introducible] = []
+  
+  var robot = Robot(name: "옵티머스")
+  let cat = Cat(name: "나비")
+  let dog = Dog(name: "바둑이")
+  
+  func introducibles() {
     introducible.append(robot)
     introducible.append(cat)
     introducible.append(cat)
@@ -33,7 +33,7 @@ actor IntroducibleManager {
           break
       }
     }
-
+    
     robot.name = "피규어"
   }
   
