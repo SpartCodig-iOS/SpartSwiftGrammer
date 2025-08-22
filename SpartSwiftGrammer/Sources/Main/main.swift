@@ -11,4 +11,4 @@ import LogMacro
 
 let deliveryRunner = DeliveryRunner()
 
-await deliveryRunner.runs()
+await deliveryRunner.runDelivery()
