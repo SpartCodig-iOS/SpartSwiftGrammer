@@ -13,8 +13,6 @@ final actor HigherOrderFunctions {
 
   let numbers1 = [1, 2, 3, 4, 5]
 
-
-
   func mapNumbers() {
     let result = numbers1.map{ String($0) }
     #logDebug(result)
