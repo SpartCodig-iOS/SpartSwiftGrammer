@@ -8,15 +8,12 @@
 import Foundation
 import LogMacro
 
-let sumClosure = SumClosure()
+let higherOrderFunctions = HigherOrderFunctions()
 
+await higherOrderFunctions.changeForinToMap()
 
-await sumClosure.calculate(a: sumClosure.num, b: sumClosure.num2, operation: sumClosure.sum)
+await higherOrderFunctions.changeType(higherOrderFunctions.numbers)
 
-switch await  sumClosure.calculate2(a: sumClosure.num, b: sumClosure.num2, operation: sumClosure.sum) {
-case .success(let value):
-  #logDebug(value)
-case .failure(let error):
-  #logError("에러 발생: \(error)")
-}
+await higherOrderFunctions.changeTypeWithMyMap(higherOrderFunctions.numbers)
+
 
