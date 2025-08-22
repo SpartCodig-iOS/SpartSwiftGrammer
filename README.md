@@ -263,3 +263,9 @@ let numericResult = ArrayIndex.removeEvenIndexWithNumeric([10,20,30,40,50])
 // 출력: [10, 30, 50]
 
 ``` 
+
+### 🔧 트러블 슈팅
+- einit 로그가 호출되지 않음
+- 	Xcode Debug Memory Graph에서 객체가 계속 남아 있음
+- 화면 전환/반복 액션 시 메모리 사용량이 지속 증가 (Leaks/Allocations에서 관찰)
+- [트러블 슈탕](https://velog.io/@suhwj/참조-순환-트러블-슈팅)
