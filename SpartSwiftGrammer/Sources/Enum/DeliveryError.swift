@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: - 배송 에러 status
 enum DeliveryError: Error {
-    case invalidAddress
-    case notStarted
-    case systemError(reason: String)
+  case invalidAddress
+  case notStarted
+  case systemError(reason: String)
 }
 
 

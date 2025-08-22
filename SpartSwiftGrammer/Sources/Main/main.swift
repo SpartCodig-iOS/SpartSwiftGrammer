@@ -9,4 +9,6 @@ import Foundation
 import LogMacro
 
 
-DeliveryTestRunner.run()
+let deliveryRunner = DeliveryRunner()
+
+await deliveryRunner.runs()

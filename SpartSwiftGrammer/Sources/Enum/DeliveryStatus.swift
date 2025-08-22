@@ -19,9 +19,9 @@ enum DeliveryStatus: CustomStringConvertible {
       case .notStarted:
         return "배송 시작전"
       case .inTransit(let daysRemaining):
-         return "배송까지 \(daysRemaining)일 남았습니다."
+        return "배송까지 \(daysRemaining)일 남았습니다."
       case .error:
-       return"시스템 장애로 예측이 불가합니다."
+        return"시스템 장애로 예측이 불가합니다."
     }
   }
 }
