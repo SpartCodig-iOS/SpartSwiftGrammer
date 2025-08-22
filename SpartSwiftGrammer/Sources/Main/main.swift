@@ -8,6 +8,6 @@
 import Foundation
 import LogMacro
 
-let deliveryRunner = DeliveryRunner()
+let hybridCar = HybridCar(brand: "현대", model: "코나", year: "2025")
 
-await deliveryRunner.runDelivery()
+hybridCar.switchEngine(to: .electricEngine)
