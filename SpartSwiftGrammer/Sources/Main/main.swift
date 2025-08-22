@@ -8,7 +8,7 @@
 import Foundation
 import LogMacro
 
-let deliveryRunner = DeliveryRunner()
+let introducible = IntroducibleManager()
 
-await introducible.introduceAll()
+await introducible.introducibles()
 
