@@ -8,7 +8,7 @@
 
 ## 📑 컨벤션
 - [공통 컨벤션](./Convention/Common.md)  
-  모든 Swift 코드에서 반드시 준수해야 하는 컨벤션을 정의합니다.
+모든 Swift 코드에서 반드시 준수해야 하는 컨벤션을 정의합니다.
 
 ---
 
@@ -38,20 +38,33 @@
 
 ## 💾 Commit 가이드
 - [Commit 메시지 규칙](./.github/.gitMessage.md)  
-  일관된 커밋 메시지를 작성하기 위한 가이드입니다.
+일관된 커밋 메시지를 작성하기 위한 가이드입니다.
 
 ---
 
 ## 📝 과제 소개
 Swift 문법 학습을 기반으로, 다음 개념을 코드로 실습합니다.
 
-- 객체지향 설계(OOP)
-- 제네릭(Generics)
-- ARC/메모리 관리 & 순환 참조(Retain Cycle)
-- 클로저(Closures)
-- 고차 함수(Map, Filter 등)
-- 프로토콜 지향 프로그래밍(POP)
-- 열거형 & 오류 처리(Enum & Error Handling)
+- 객체지향 설계(OOP)  
+  → Car, ElectricCar, HybridCar 설계 및 상속 vs 프로토콜 비교
+
+- 제네릭(Generics)  
+  → SortableBox 구현, ArrayIndex 제네릭 메서드로 타입 안전한 처리
+
+- ARC/메모리 관리 & 순환 참조(Retain Cycle)  
+  → 클래스 간 강한 참조 / 클로저 캡처 기반 메모리 누수 재현 및 weak, unowned 해결
+
+- 클로저(Closures)  
+  → SumClosure, 클로저 기반 계산, Result 반환, @discardableResult 활용
+
+- 고차 함수(Map, Filter 등)  
+  → HigherOrderFunctions, ArrayIndex 활용 예제 (map, filter, custom myMap)
+
+- 프로토콜 지향 프로그래밍(POP)  
+  → Introducible 기본 구현 제공, Robot 커스텀 introduce()
+
+- 열거형 & 오류 처리(Enum & Error Handling)  
+  → DeliveryStatus + predictDeliveryDay() 오류 처리 및 CustomStringConvertible
 
 ### 학습 목표
 - Swift 기본 문법 숙지  
@@ -133,13 +146,27 @@ Swift 문법 학습을 기반으로, 다음 개념을 코드로 실습합니다.
 - `final actor HigherOrderFunctions`
 - 상태: `numbers`, `numbers1`
 - 메서드:
-  - `mapNumbers()` → map 활용
-  - `changeType(_:)` → filter + map 활용
-  - `changeTypeWithMyMap(_:)` → 직접 만든 `myMap` 이용
-  - `myMap<T,U>(_:transform:)` → 고차 함수 직접 구현
+- `mapNumbers()` → map 활용
+- `changeType(_:)` → filter + map 활용
+- `changeTypeWithMyMap(_:)` → 직접 만든 `myMap` 이용
+- `myMap<T,U>(_:transform:)` → 고차 함수 직접 구현
 
 참고 파일:  
 `Sources/HigherOrderFunctions/HigherOrderFunctions.swift`
+
+### 8) 제네릭 & 배열 인덱스 처리: ArrayIndex
+- `final actor ArrayIndex`
+- 정적 배열:
+- `numbers = [1,2,3,4,5]`
+- `koreanAlphabets = ["가","나","다","라","마"]`
+- 메서드:
+- `removeIndexInt(_:)` → `Int` 배열에서 짝수 인덱스만 남김
+- `removeIndexWithString(_:)` → `String` 배열에서 짝수 인덱스만 남김
+- `removeEvenIndex<T>(_:)` → 제네릭 기반 (모든 타입)
+- `removeEvenIndexWithNumeric<T: Numeric>(_:)` → `Numeric` 제약이 있는 제네릭
+
+참고 파일:  
+`Sources/ArrayIndex/ArrayIndex.swift`
 
 ---
 
@@ -216,38 +243,23 @@ await higherOrderFunctions.changeTypeWithMyMap( higherOrderFunctions.numbers1)
 
 ```
 
+#### 배열 인덱스
 
+``` swift
+// Int 배열 처리
+let intResult = ArrayIndex.removeIndexInt([1,2,3,4,5])
+// 출력: [1, 3, 5]
 
-####  폴더 구조
- 
-``` 
-SpartSwiftGrammer/
-├─ README.md
-├─ .github/
-│  └─ .gitMessage.md
-│  └─Convention/
-│  │  └─ Common.md
-└─ Sources/
-   ├─ OOP/
-   │  ├─ Engines.swift
-   │  ├─ Car.swift
-   │  └─ HybridCar.swift
-   ├─ Protocol/
-   │  ├─ Introducible.swift
-   │  └─ IntroducibleManager.swift
-   │  └─ Cat.swift
-   │  └─ Dog.swift
-   │  └─ Robot.swift
-   ├─ Generics/
-   │  └─ SortableBox.swift
-   ├─ ARC/
-   │  └─ RetainCycleDemo.swift
-   ├─ Enum/
-   │  └─ Delivery.swift
-   │  └─ DeliveryError
-   │  └─DeliveryRunner
-    ├─ Closures/
-    │  └─ SumClosure.swift
-    └─ HigherOrderFunctions/
-    │  └─HigherOrderFunctions.swift
+// String 배열 처리
+let stringResult = ArrayIndex.removeIndexWithString(["가","나","다","라","마"])
+// 출력: ["가", "다", "마"]
+
+// 제네릭 함수 활용
+let genericResult = ArrayIndex.removeEvenIndex([true, false, true, false])
+// 출력: [true, true]
+
+// Numeric 제약 활용
+let numericResult = ArrayIndex.removeEvenIndexWithNumeric([10,20,30,40,50])
+// 출력: [10, 30, 50]
+
 ``` 
