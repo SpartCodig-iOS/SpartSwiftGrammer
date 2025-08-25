@@ -13,4 +13,3 @@ let memoryLeak = MemoryLeak()
 await memoryLeak.leak()
 await memoryLeak.memoryLeakWeak()
 await memoryLeak.memorykLeakUnknown()
-
