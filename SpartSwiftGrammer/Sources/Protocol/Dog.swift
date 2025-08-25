@@ -15,6 +15,11 @@ struct Dog: Introducible {
 //    #logDebug("안녕하세요, 저는 \(name)입니다.")
 //  }
   
+
+  func introduce() {
+    #logDebug("안녕하세요, 저는 \(name)입니다.")
+  }
+
   func bark() {
     #logDebug("\(name): 멍멍!")
   }

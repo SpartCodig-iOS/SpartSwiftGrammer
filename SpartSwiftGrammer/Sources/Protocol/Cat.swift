@@ -15,6 +15,12 @@ struct Cat: Introducible {
   //    #logDebug("안녕하세요, 저는 \(name)입니다.")
   //  }
   
+
+
+  func introduce() {
+    #logDebug("안녕하세요, 저는 \(name)입니다.")
+  }
+
   func meow() {
     #logDebug("\(name): 야옹~")
   }
