@@ -9,7 +9,6 @@ import Foundation
 import LogMacro
 
 final actor ArrayIndex {
-
   var numbers = [1, 2, 3, 4, 5]
   var koreanAlphabets =  ["가", "나", "다", "라", "마"]
 
