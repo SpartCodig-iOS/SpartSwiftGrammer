@@ -8,7 +8,6 @@
 import Foundation
 import LogMacro
 
-let introducible = IntroducibleManager()
+let hybridCar = HybridCar(brand: "현대", model: "코나", year: "2025")
 
-await introducible.introducibles()
-
+hybridCar.switchEngine(to: .electricEngine)
